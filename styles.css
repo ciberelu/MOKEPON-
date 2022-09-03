@@ -1,0 +1,148 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Fredoka+One&display=swap');
+body{
+    font-family: 'Fredoka One', cursive;
+    background-color: #222831;
+    
+}
+
+
+.titulo{
+    color:#00ADB5;
+    font-size: 38px;
+
+    
+}
+
+#mascota{
+    text-align: center;
+    
+    border-radius: 20px;
+    padding: 5px;
+    border: 1px solid white;
+}
+.subtitulo {
+    color:#00FFF5;
+    font-size: 24px;
+    font-family: 'Aboreto', cursive;
+    text-align: center;
+}
+
+.tarjetas{
+    display:flex;
+    gap:10px;
+}
+
+
+
+#selec_mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.label{
+    width: 180px;
+    height: 100px;
+    background-color: #393E46;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.tarjetas img {
+    width: 80;
+}
+
+#botonMascota{
+    width: 180;
+    height: 40;
+    border-radius: 15px;
+    margin-top: 15px;
+    background-color: transparent;
+    color: white;
+}
+
+#selec_ataque{
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    display:none
+}
+
+input:checked + .label{
+    background-color: black;
+
+}
+.botonAtaque{
+    
+    width: 80px;
+    height: 44px;
+    background-color: #393E46;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    color: white;
+}
+#mensajes{
+   
+    width: 180;
+    background-color:rgb(245, 9, 9) ;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+.mensajesFinales{
+    display: grid;
+	grid-template-columns: 100px 100px;
+    text-align: center;
+    border: 1px solid white;
+
+}
+
+#verMapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#verMapa button {
+    width: 80;
+    height: 40;
+    border-radius: 15px;
+    margin: 5px  0;
+
+    background-color: transparent;
+    color: white;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px){
+    .tarjetas, .titulo{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+
+}
+
+@media(max-width:300px){
+    #verMapa div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+

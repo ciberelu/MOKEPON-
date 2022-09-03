@@ -1,0 +1,98 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOKEPON!</title>
+    <link rel="stylesheet" href="./styles.css">
+    
+
+    </script>
+</head>
+<body>
+    
+    <section id = "selec_mascota">
+        <h1  class = "titulo">Mokepon (●'◡'●)</h1>
+        <div id="mascota">
+        <h2 class = "subtitulo">Elige tu mascota:</h2>
+            <div id = "contenedor" class = "tarjetas">
+                       
+            </div>
+            
+
+                 <button id = "botonMascota">Play</button>
+    </section>
+    
+
+    <section id = "verMapa">
+        <h2 class = "subtitulo">recorre el mapa con tu Mokepon</h2>
+         <canvas id = "mapa"></canvas>
+
+            <div>
+            <button   onmouseup="detenerMovimiento()" onmousedown="moverArriba()">arriba</button>
+            </div>
+            <div>
+
+                <button   onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">izquierda</button>
+                <button   onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">derecha</button>
+               
+                
+            </div>
+            <div>
+                <button   onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">abajo</button>
+
+            </div>
+    </section>
+
+    <section id = "selec_ataque">
+        <h1  class = "titulo">Mokepon (●'◡'●)</h1>
+
+        <h2 class = "subtitulo">Elige tu ataque:</h2>
+
+        <div id = "contenedorAtaques" class = tarjetasAtaques>
+                
+            
+        </div>
+
+        
+        <section id = "mensajes">
+                <p id = "resultado">Good Luck boddy</p>
+                <p>
+                    <button id = "botonReiniciar">reiniciar</button>
+                </p>
+        </section>
+
+           
+            
+        
+
+
+        <div>
+            <section id = "reiniciar">
+                <p>
+                    
+                </p>
+            </section>
+        </div>
+        <DIV  class = "mensajesFinales">
+            <DIV class = "separar" id = "mensajeJugador">
+                
+                <p id = vidasJugador>0</p>
+                <p id = "mascota-jugador"></p>
+                
+            </DIV>
+
+            <DIV class = "separar" id = "mensajeEnemigo">
+                
+                <p id = vidasEnemigo>0</p>
+                <p id = "mascota-enemigo"></p>
+                
+            </DIV>
+        </DIV>
+        
+        </section>
+    <script src = "./js/codigo.js"></script>
+</body>
+</html>
